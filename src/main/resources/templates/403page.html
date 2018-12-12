@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	
+    <h3 th:if="${message != null}" th:utext="${message}" style="color: red;"></h3>
+ 
+    <div th:if="${userInfo != null}" th:utext="${userInfo}"></div>
+     
+</body>
+</html>

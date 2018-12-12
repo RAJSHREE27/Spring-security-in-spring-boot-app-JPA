@@ -1,0 +1,29 @@
+drop table User;
+
+create table User(
+	
+	user_id VARCHAR2(10) primary key,
+	user_password VARCHAR2(15),
+	e_mail VARCHAR2(25) 
+	
+);
+
+create table UserRole(
+	
+	user_id varchar2(10),
+	role_name varchar2(15),
+	
+	constraint cons1 foreign key user_id references User(user_id)
+	
+);
+
+Insert into User values (111,,qwerty@gmail.com);
+Insert into User values (222,,asdf@gmail.com);
+Insert into User values (333,,zxcv@gmail.com);
+
+
+Insert into UserRole values (111, 'User');
+Insert into UserRole values (222, 'User');
+Insert into UserRole values (333, 'Admin');
+
+commit;

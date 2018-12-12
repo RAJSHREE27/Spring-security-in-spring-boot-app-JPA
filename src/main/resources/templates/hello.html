@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>hello</title>
+</head>
+<body>
+	
+	  <h1>Hello  <span th:utext="${#request.userPrincipal.name}"></span></h1>
+	  
+	  <b>This is protected page!</b>  
+       
+      <br/><br/>
+       
+      <div th:if="${userInfo != null}" th:utext="${userInfo}"></div>
+       
+	
+</body>
+</html>

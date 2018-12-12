@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+</head>
+<body>
+
+	
+	<h1>Hello!</h1>
+	<p>click <a href="/hello">here</a> to see greetings</p>
+	 <a th:if="${#request.userPrincipal != null}" th:href="@{/logout}">Logout</a>
+  
+	
+</body>
+</html>
